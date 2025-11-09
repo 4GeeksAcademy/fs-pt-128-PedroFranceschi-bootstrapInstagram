@@ -19,7 +19,7 @@
         </a>
 
             <div>
-                <button type="button" class="btn btn-success">Create a new Post</button>
+                <!-- <button type="button" class="btn btn-success">Create a new Post</button> -->
                 <!-- <div class="btn-group" role="group">
                     <button id="settings-button-group" type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-gear-fill"> </i></button>
                     <ul class="dropdown-menu-end" aria-labelledby="settings-button-group">
@@ -30,6 +30,33 @@
 
                     </ul>
                 </div> -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new Post</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Caption:</p>
+                        <div class="input-group mb-3">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Add the caption here"></textarea>
+                        </div>
+                        <button class="btn btn-light"><i class="bi bi-camera"></i></button>
+                        <button class="btn btn-light"><i class="bi bi-geo-alt-fill"></i></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
 
                 <div class="btn-group">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
